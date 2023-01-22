@@ -1,14 +1,32 @@
+### SIGN OUT
+POST http://localhost:3000/auth/signout
+content-type: application/json
+
+
+### WHO AM I
+GET http://localhost:3000/auth/whoami
+content-type: application/json
+
 ### CREATE A NEW USER
 POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "caskdakda@hotmail.com",
+  "email": "cstda@hotmail.com",
+  "password" : "aksdkasd"
+}
+
+### LOGIN A USER
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "cstda@hotmail.com",
   "password" : "aksdkasd"
 }
 
 ### FIND A PARTICULAR USER BY ID
-GET http://localhost:3000/auth/1666
+GET http://localhost:3000/auth/5
 content-type: application/json
 
 ### FIND ALL USERS WITH GIVEN EMAIL
@@ -25,3 +43,4 @@ content-type: application/json
 {
   "email": "aaaaaaa@aaaa.com"
 }
+
