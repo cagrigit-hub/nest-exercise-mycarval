@@ -12,8 +12,8 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "cstda@hotmail.com",
-  "password" : "aksdkasd"
+  "email": "merhaba@hotmail.com",
+  "password" : "123123"
 }
 
 ### LOGIN A USER
@@ -21,8 +21,8 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email": "cstda@hotmail.com",
-  "password" : "aksdkasd"
+  "email": "merhaba@hotmail.com",
+  "password" : "123123"
 }
 
 ### FIND A PARTICULAR USER BY ID

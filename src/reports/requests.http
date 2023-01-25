@@ -1,0 +1,25 @@
+### GET ESTIMATE FOR AN EXISTING VEHICLE
+GET http://localhost:3000/reports?make=ford&model=mustange&year=1981&mileage=20000&lng=45&lat=45
+Content-Type: application/json
+
+### CREATE REPORT
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "make" : "ford",
+    "model" : "mustange",
+    "year" : 1982,
+    "price" : 20000,
+    "mileage" : 50000,
+    "lng": 45,
+    "lat": 45
+}
+
+### APROVE REPORT
+PATCH  http://localhost:3000/reports/15
+Content-Type: application/json
+
+{   
+    "approved" : true
+}
